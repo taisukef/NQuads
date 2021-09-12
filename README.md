@@ -1,6 +1,6 @@
 # NQuads.js ES module
 
-NQuads.js is ES module to parse and stringify for N-Quads.
+NQuads.js is ES module to parse and stringify for [N-Quads](https://www.w3.org/TR/n-quads/).
 
 ## Usage
 
