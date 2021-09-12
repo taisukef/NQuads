@@ -7,8 +7,7 @@ NQuads.js is ES module to parse and stringify for N-Quads.
 ```js
 import { NQuads } from "https://taisukef.github.io/NQuads/NQuads.js";
 
-//const url = "./test.nq";
-const url = "./test2.nq";
+const url = "https://taisukef.github.io/NQuads/test.nq";
 
 const data = await NQuads.fetch(url);
 console.log(data);
@@ -27,4 +26,9 @@ const json = [
 ];
 const nq2 = await NQuads.stringify(json);
 console.log(nq2);
+/*
+<https://example.com/1> <http://schema.org/image> <http://manu.sporny.org/images/manu.png> .
+<https://example.com/1> <http://schema.org/name> "Manu\n\"Sporny\"" .
+<https://example.com/1> <http://schema.org/url> <http://manu.sporny.org/> .
+*/
 ```
